@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* seção topo */
+.secao-topo {
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.secao-topo p  {
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    box-sizing: border-box; 
+    color: red;
+}
+
+.secao-topo span {
+    color: #0646a5;
+}
+
+.secao-largura-limitada {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #fff;
+    margin: 0;
+}
+
+/* seção inicial com imagem de fundo */
+
+.secao-background-capa {
+    min-height: 500px;
+    background-image: url('./assets/img/capa.jpg');
+    background-size: cover ;
+    cursor: pointer;
+}
+
+.secao-background-conteudo {
+    text-align: right;
+    padding: 50px 20px;
+    background: rgba(0, 0, 133, 0.692);
+}
+
+/* seção contaúdo */
+.secao-conteudo {
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+
+.img-conteudo {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.secao-conteudo span {
+    border-left: 1px solid;
+    padding-left: 10px;
+    font-size: 16px;;
+}
+
+/* seção com imagem de fundo e texto */
+.secao-background-divisao {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #216bd9;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secao-background-divisao h3 {
+    width: 100%;
+    font-size: 36px;
+    background-color: #1041e2;
+    color: #fff;
+    margin: 0 aut0;
+}
+
+.grupo-campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo-campo input, .grupo-campo select {
+    margin: 12px 0;
+    height: 25px;
+    border: none;
+}
+
+.secao-conteudo fieldset {
+    margin: 12px 0;
+    background-color: rgba(207, 207, 218, 0.336);
+    border: none;
+}
+
+.secao-conteudo button {
+    width: 100%;
+    height: 32px;
+    background: #1041e2;
+    color: #fff;
+    border: none;
+    cursor: pointer
+}
+
+.secao-conteudo button:hover {
+    background-color: #216bd9;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    position: relative;
+    bottom:  0;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #1041e2;
+}
+
+footer p {
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+}
+
+@media (max-width: 815px) {
+    .img-conteudo {
+        width: 100%;
+    }
+}
